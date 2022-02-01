@@ -42,7 +42,7 @@ public interface HttpTrait<T extends HttpTrait<T>> {
      * based on the settings provided to this trait. Additionally, there may be other APIs in types that implement this
      * trait that are also ignored if an {@link HttpPipeline} is specified, so please be sure to refer to the
      * documentation of types that implement this trait to understand the full set of implications.</p>
-     * 
+     *
      * @param httpClient The {@link HttpClient} to use for requests.
      * @return Returns the same concrete type with the appropriate properties updated, to allow for fluent chaining of
      *      operations.
