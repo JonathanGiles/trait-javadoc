@@ -13,8 +13,8 @@ import com.azure.core.http.policy.RetryOptions;
 /**
  * A {@link com.azure.core.client.traits Azure SDK for Java trait} providing a consistent interface for configuration
  * of HTTP-specific settings. Refer to the Azure SDK for Java
- *  * <a href="https://docs.microsoft.com/azure/developer/java/sdk/http-client-pipeline">HTTP clients and pipelines</a>
- *  * documentation for more details on proper usage and configuration of the Azure SDK for Java HTTP clients.
+ * <a href="https://docs.microsoft.com/azure/developer/java/sdk/http-client-pipeline">HTTP clients and pipelines</a>
+ * documentation for more details on proper usage and configuration of the Azure SDK for Java HTTP clients.
  *
  * @param <T> The concrete type that implements the trait. This is required so that fluent operations can continue
  *           to return the concrete type, rather than the trait type.
