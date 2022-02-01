@@ -4,7 +4,7 @@
 /**
  * This package contains interfaces that represent common cross-cutting (and AMQP-related) aspects of functionality
  * offered by libraries in the Azure SDK for Java. Each interface is referred to as a 'trait', and classes that
- * implement the interface are said to have certain that trait. There are additional traits that are more general
+ * implement the interface are said to have that trait. There are additional traits that are more general
  * purpose in the {@link com.azure.core.client.traits} package.
  *
  * <p>The particular focus of traits in the Azure SDK for Java is to enable higher-level
