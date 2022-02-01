@@ -6,7 +6,7 @@ package com.azure.core.client.traits;
 import com.azure.core.credential.AzureSasCredential;
 
 /**
- * A {@link com.azure.core.client.traits Azure SDK for Java trait} providing a consistent interface for setting
+ * An {@link com.azure.core.client.traits Azure SDK for Java trait} providing a consistent interface for setting
  * {@link AzureSasCredential}. Refer to the Azure SDK for Java
  * <a href="https://docs.microsoft.com/azure/developer/java/sdk/identity">identity and authentication</a>
  * documentation for more details on proper usage of the {@link AzureSasCredential} type.

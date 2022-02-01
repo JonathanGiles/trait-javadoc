@@ -8,7 +8,7 @@ import com.azure.core.amqp.AmqpTransportType;
 import com.azure.core.amqp.ProxyOptions;
 
 /**
- * A {@link com.azure.core.client.traits Azure SDK for Java trait} providing a consistent interface for configuration
+ * An {@link com.azure.core.client.traits Azure SDK for Java trait} providing a consistent interface for configuration
  * of AMQP-specific settings.
  *
  * @param <T> The concrete type that implements the trait. This is required so that fluent operations can continue

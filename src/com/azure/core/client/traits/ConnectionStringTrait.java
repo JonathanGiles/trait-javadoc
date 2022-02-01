@@ -4,7 +4,7 @@
 package com.azure.core.client.traits;
 
 /**
- * A {@link com.azure.core.client.traits Azure SDK for Java trait} providing a consistent interface for
+ * An {@link com.azure.core.client.traits Azure SDK for Java trait} providing a consistent interface for
  * setting connection strings.
  *
  * @param <T> The concrete type that implements the trait. This is required so that fluent operations can continue

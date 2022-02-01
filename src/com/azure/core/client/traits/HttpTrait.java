@@ -11,7 +11,7 @@ import com.azure.core.http.policy.HttpPipelinePolicy;
 import com.azure.core.http.policy.RetryOptions;
 
 /**
- * A {@link com.azure.core.client.traits Azure SDK for Java trait} providing a consistent interface for configuration
+ * An {@link com.azure.core.client.traits Azure SDK for Java trait} providing a consistent interface for configuration
  * of HTTP-specific settings. Refer to the Azure SDK for Java
  * <a href="https://docs.microsoft.com/azure/developer/java/sdk/http-client-pipeline">HTTP clients and pipelines</a>
  * documentation for more details on proper usage and configuration of the Azure SDK for Java HTTP clients.
