@@ -9,6 +9,7 @@ import com.azure.core.http.policy.HttpLogDetailLevel;
 import com.azure.core.http.policy.HttpLogOptions;
 import com.azure.core.http.policy.HttpPipelinePolicy;
 import com.azure.core.http.policy.RetryOptions;
+import com.azure.core.util.HttpClientOptions;
 
 /**
  * An {@link com.azure.core.client.traits Azure SDK for Java trait} providing a consistent interface for configuration
@@ -31,6 +32,7 @@ import com.azure.core.http.policy.RetryOptions;
  * @see HttpPipelinePolicy
  * @see RetryOptions
  * @see HttpLogOptions
+ * @see HttpClientOptions
  */
 public interface HttpTrait<T extends HttpTrait<T>> {
     /**
@@ -114,4 +116,25 @@ public interface HttpTrait<T extends HttpTrait<T>> {
      *      operations.
      */
     T httpLogOptions(HttpLogOptions logOptions);
+
+    /**
+     * Allows for setting common properties such as application ID, headers, proxy configuration, etc. Note that it is
+     * recommended that this method be called with an instance of the {@link HttpClientOptions}
+     * class (a subclass of the {@link ClientOptions} base class). The HttpClientOptions subclass provides more
+     * configuration options suitable for HTTP clients, which is applicable for any class that implements this HttpTrait
+     * interface.
+     *
+     * <p><strong>Note:</strong> It is important to understand the precedence order of the HttpTrait APIs. In
+     * particular, if a {@link HttpPipeline} is specified, this takes precedence over all other APIs in the trait, and
+     * they will be ignored. If no {@link HttpPipeline} is specified, a HTTP pipeline will be constructed internally
+     * based on the settings provided to this trait. Additionally, there may be other APIs in types that implement this
+     * trait that are also ignored if an {@link HttpPipeline} is specified, so please be sure to refer to the
+     * documentation of types that implement this trait to understand the full set of implications.</p>
+     *
+     * @param clientOptions A configured instance of {@link HttpClientOptions}.
+     * @return Returns the same concrete type with the appropriate properties updated, to allow for fluent chaining of
+     *      operations.
+     * @see HttpClientOptions
+     */
+    T clientOptions(ClientOptions clientOptions);
 }
